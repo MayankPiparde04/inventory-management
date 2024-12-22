@@ -39,10 +39,11 @@ function Statistics() {
   const saleItems = {
     'Amazon ONI': { total: 1240, perDay: 30 },
     'Amazon Comet': { total: 910, perDay: 25 },
-    'Flipkart ONI': { total: 1460, perDay: 35 },
+    'Flipkart ONI': { total: 1060, perDay: 35 },
     'Flipkart Comet': { total: 810, perDay: 20 },
-    Meesho: { total: 680, perDay: 17 },
-    Other: { total: 440, perDay: 15 },
+    Myntra: { total: 680, perDay: 17 },
+    Shopify: { total: 280, perDay: 15 },
+    Mics: { total: 440, perDay: 21 },
   };
 
   const inventoryData = {
@@ -64,6 +65,7 @@ function Statistics() {
           'rgba(255, 206, 86, 0.6)',
           'rgba(75, 192, 192, 0.6)',
           'rgba(153, 102, 255, 0.6)',
+          'rgba(135, 212, 55, 0.6)',
         ],
         borderWidth: 1,
       },
@@ -162,7 +164,9 @@ function Statistics() {
           'rgba(255, 206, 86, 0.6)',
           'rgba(75, 192, 192, 0.6)',
           'rgba(175, 12, 192, 0.6)',
-          'rgba(153, 102, 255, 0.6)',
+          'rgba(153, 152, 255, 0.6)',
+          'rgba(135, 212, 55, 0.6)',
+
         ],
         hoverOffset: 4,
       },

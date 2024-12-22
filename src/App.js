@@ -1,12 +1,12 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Statistics from "./pages/Statistics";
-import RemoveItem from "./pages/RemoveItem";
-import AddItem from "./pages/AddItem";
-import ReturnItem from "./pages/ReturnItem";
-import AddNewCategory from "./pages/AddNewCategory";
-import CategoryList from "./pages/CategoryList";
+import Inventory from "./pages/Inventory";
+import Sales from "./pages/Sales";
+import Return from "./pages/Return";
+import Map from "./pages/Map";
 import Sidebar from "./component/Sidebar";
+import Purchase from "./pages/Purchase";
 
 // Shared Layout Component
 const Layout = () => (
@@ -27,11 +27,11 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: "/", element: <Statistics /> },
-      { path: "/additem", element: <AddItem /> },
-      { path: "/removeitem", element: <RemoveItem /> },
-      { path: "/returnitem", element: <ReturnItem /> },
-      { path: "/categorylist", element: <CategoryList /> },
-      { path: "/addnewcategory", element: <AddNewCategory /> },
+      { path: "/inventory", element: <Inventory /> },
+      { path: "/sales", element: <Sales /> },
+      { path: "/return", element: <Return /> },
+      { path: "/map", element: <Map /> },
+      { path: "/purchase", element: <Purchase /> },
     ],
   },
 ]);
